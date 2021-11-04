@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image:linear-gradient(#f0ffff #ffe4c4 #dcdcdc);
+}
+.startline {
+    margin-top: 7px;
+    margin-left: 8px;
+    background-color: rgb(154, 243, 243);
+}
+.navbar-nav{
+    word-spacing: 2em;
+}
+.carousel-inner{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed ;
+    width: 100%;
+    padding-left:15em ;
+}
+/* features */
+.features{
+    padding: 100px 0;
+    
+    
+}
+.features h1{
+    text-align: center;
+    
+    padding-bottom: 37px;
+    font-family: cursive;
+    font-weight: bold;
+    color:darkblue;
+    text-shadow: rgb(65, 53, 150);
+}
+.para{
+    padding: 2em;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+ /* cards */
+
+
+.card{
+    padding: 1em;
+    margin-bottom: 2em;
+    
+}
+.card a{
+    
+    text-decoration: none;
+    color:red
+}
+.footer{
+    padding:100px 20px;
+    font-size: small;
+    
+}
+.footer container{
+    background-image:linear-gradient(#ce5a5a) ;
+
+}
+
+
+footer{
+    background:black;
+    height: auto;
+    width: 100vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    padding-top: 40px;
+}
+.footercontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footercontent h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+.social{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin:0 10px;
+    padding-left:2em ;
+    font-size: 26px;
+}
+.social li{
+    padding-right: 1em;
+}
+.footerbottom{
+    background: rgb(154, 243, 243);
+    width: 100vw;
+    padding : 8px 0;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+/* index pg formatting ends here */
+/* login pg */
+.loginpg{
+    margin-top: 4em;
+    margin-left: 25em;
+    padding: 1em;
+}
+.row {
+    background-color: rgb(154, 243, 243);
+    padding: 1em;
+    border-style: outset;
+}
+/* form enquiry */
+
+.enquirypg{
+    margin-top:3em ;
+    margin-left: 27em;
+    padding: 1em;
+    padding-left: 6em;
+}
+.rowenq{
+    background-color: rgb(154, 243, 243);
+    padding: 1em;
+    
+    border-style: outset ;
+}
+
+.headingenq h3{
+    padding-right: 2em ;
+    margin-top: 2em;
+    font-size: 40px;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+}
+
+/* mustvisit places */
+.place{
+    padding-left: 28em;
+    margin-top: 3em;
+
+}
+.headingmust h3{
+    padding-top: 2em;
+    padding:1em;
+
+    font-size: 40px;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+}
+/* kannur */
+
+.carousel-kannur{
+    background-position: center;
+    background-size: auto;
+    background-attachment: fixed ;
+    height: auto;
+
+}
+.kannur1{
+    padding: 2em;
+    margin-top: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.kannur{
+    padding: 2em;
+    margin: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.allapuzha{
+    padding: 2em;
+    margin-top:1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.allappey{
+    padding:2em;
+    margin:1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.kasargod{
+    padding:2em;
+    margin-top: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.kasargod1{
+    padding: 2em;
+    margin: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.kollam{
+    padding: 2em;
+    margin-top:1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.kollam1{
+    padding: 2em;
+    margin: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.kottayam{
+    padding: 2em;
+    margin-top:1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.kottayam1{
+    padding: 2em;
+    margin: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.kozhikod{
+    padding: 2em;
+    margin-top:1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.kozhikod1{
+    padding: 2em;
+    margin: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mallapuram{
+    padding: 2em;
+    margin-top:1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mallapuram1{
+    padding: 2em;
+    margin: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.palakad{
+    padding: 2em;
+    margin-top:1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.palakad1{
+    padding: 2em;
+    margin: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pathanamthitta{
+    padding: 2em;
+    margin-top:1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pathanamthitta1{
+    padding: 2em;
+    margin: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.thiruvanthapuram{
+    padding: 2em;
+    margin-top:1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.thiruvanthapuram1{
+    padding: 2em;
+    margin: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.thrissur{
+    padding: 2em;
+    margin-top:1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.thrissur1{
+    padding: 2em;
+    margin: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.wayanad{
+    padding: 2em;
+    margin-top:1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.wayanad1{
+    padding: 2em;
+    margin: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.ernakulam{
+    padding: 2em;
+    margin-top:1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.ernakulam1{
+    padding: 2em;
+    margin: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.idukki{
+    padding: 2em;
+    margin-top:1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.idukki1{
+    padding: 2em;
+    margin: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
