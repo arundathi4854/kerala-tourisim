@@ -110,7 +110,7 @@ footer{
 /* login pg */
 .loginpg{
     margin-top: 4em;
-    margin-left: 25em;
+    margin-left: 30em;
     padding: 1em;
 }
 .row {
@@ -141,6 +141,14 @@ footer{
     font-family: cursive;
     font-weight: bold;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+}
+/* SIGN UP FORM */
+.regpg{
+    margin-top:3em ;
+    margin-left: 27em;
+    padding: 1em;
+    padding-left: 6em;
 
 }
 
@@ -313,6 +321,31 @@ footer{
     margin: 1em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+/* form validation */
+
+.input-1{
+    border:1px solid #01cc40;
+
+}
+
+.input-2{
+    border:1px solid red;
+
+}
+.input-3{
+    border:1px solid #01cc40;
+
+}
+.input-4{
+    border:1px solid red;
+
+}
+select{
+    outline: none!important;
+}
+
+
 
 
 
