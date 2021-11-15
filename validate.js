@@ -1,40 +1,90 @@
-function showError(Id,Msg){
-    document.getElementById(Id).innerHTML=Msg;
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const password2 = document.getElementById('password2');
+const mobile = document.getElementById('mobile');
+
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    validateInputs();
+});
+
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
 }
 
-function validateForm(){
-    var fullname = document.Form.fullname.value;
-    var email = document.Form.email.value;
-    var password = document.Form.password.value;
-    var address = document.Form.address.value;
-    var mobile = document.Form.mobile.value;
-    var city = document.Form.city.value;
-    var state = document.Form.state.value;
-    var pincode = document.Form.pincode.value;
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
 
-    var fullnameErr = emailErr = mobileErr = stateErr = cityErr = address = true; 
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
 
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+const isValidPassword = password => {
+    const re = /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[a-zA-Z!#$@^%&? "])[a-zA-Z0-9!#$@^%&?]{8,20}$/;
+    return re.test(password);
+}
+const isValidContact = mobile =>{
+    const re = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    return re.test(mobile);
+}
 
-    if(fullname==""){
-        showError("fullnameErr", "Please enter your name");
-        var elem = document.getElementById("fullname");
-            elem.classList.add("input-2");
-            elem.classList.remove("input-1");
+const validateInputs = () => {
+    const usernameValue = username.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const password2Value = password2.value.trim();
+    const mobileValue = mobile.value.trim();
 
-    }else{
-        var regex = /^[a-zA-Z\s]+$/;
-        if (regex.test(fullname)=== false){
-            showError("fullnameErr","Please enter a vaild name");
-            var elem = document.getElementById("fullname");
-            elem.classList.add("input-2");
-            elem.classList.remove("input-1");
-        }else{
-            showError("fullnameErr","");
-            fullnameErr = false;
-            var elem = document.getElementById("fullname");
-            elem.classList.add("input-2");
-            elem.classList.remove("input-1");
-
-        }
+    if(usernameValue === '') {
+        setError(username, 'Username is required');
+    } else {
+        setSuccess(username);
     }
-};    
+
+    if(emailValue === '') {
+        setError(email, 'Email is required');
+    } else if (!isValidEmail(emailValue)) {
+        setError(email, 'Provide a valid email address');
+    } else {
+        setSuccess(email);
+    }
+
+    if(passwordValue === '') {
+        setError(password, 'Password is required');
+    } else if (!isValidPassword(passwordValue)) {
+        setError(password, 'Password must be at least 8 character, one uppercase ,one lowercase ,one special character,one numeric digit');
+    } else {
+        setSuccess(password);
+    }
+
+    if(password2Value === '') {
+        setError(password2, 'Please confirm your password');
+    } else if (password2Value !== passwordValue) {
+        setError(password2, "Passwords doesn't match");
+    } else {
+        setSuccess(password2);
+    }
+    if(mobileValue === '') {
+        setError(mobile, 'Contact number is required');
+    } else if(!isValidContact(mobileValue)) {
+        setError(mobile,'please enter your 10 digit number. To valid a phone number like XXX-XXX-XXXX XXX.XXX.XXXX XXX XXX XXXX');
+    }else{
+        setSuccess(mobile);
+    }
+
+};

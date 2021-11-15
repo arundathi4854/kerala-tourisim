@@ -52,13 +52,13 @@
   <!-- login content -->
   
   <div class="col-lg-4 loginpg">
-    <form class="row g-3" name="validate" onsubmit="return validateForm()">
-        <div class="col-md-12">
+    <form class="row g-3" id="form" action="/" name="validate">
+        <div class="col-md-12 input-control">
           <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control" id="email" placeholder="someone@gmail.com">
           <div class="error" id="emailErr"></div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 input-control">
           <label for="password" class="form-label">Password</label>
           <input type="password" class="form-control" id="password">
           <div class="error" id="passwordErr"></div>

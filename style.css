@@ -324,25 +324,36 @@ footer{
 
 /* form validation */
 
-.input-1{
-    border:1px solid #01cc40;
-
+.input-control {
+    display: flex;
+    flex-direction: column;
 }
 
-.input-2{
-    border:1px solid red;
-
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
 }
-.input-3{
-    border:1px solid #01cc40;
 
+.input-control input:focus {
+    outline: 0;
 }
-.input-4{
-    border:1px solid red;
 
+.input-control.success input {
+    border-color: #09c372;
 }
-select{
-    outline: none!important;
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
 }
 
 
