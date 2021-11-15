@@ -357,6 +357,39 @@ footer{
 }
 
 
+/*  */
+#loginform.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+#loginform.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+#loginform.input-control input:focus {
+    outline: 0;
+}
+
+#loginform.input-control.success input {
+    border-color: #09c372;
+}
+
+#loginform.input-control.error input {
+    border-color: #ff3860;
+}
+
+#loginform.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
 
 
 

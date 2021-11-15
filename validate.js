@@ -1,3 +1,4 @@
+
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
@@ -9,12 +10,13 @@ const mobile = document.getElementById('mobile');
 form.addEventListener('submit', e => {
     e.preventDefault();
 
-    validateInputs();
+    validateForms();
 });
 
+
 const setError = (element, message) => {
-    const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('.error');
+    var inputControl = element.parentElement;
+    var errorDisplay = inputControl.querySelector('.error');
 
     errorDisplay.innerText = message;
     inputControl.classList.add('error');
@@ -43,12 +45,17 @@ const isValidContact = mobile =>{
     return re.test(mobile);
 }
 
-const validateInputs = () => {
+
+function validateForms(){
+
+
     const usernameValue = username.value.trim();
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
     const password2Value = password2.value.trim();
     const mobileValue = mobile.value.trim();
+
+    // const usernameValue = emailValue = passwordValue = password2Value = mobileValue = true
 
     if(usernameValue === '') {
         setError(username, 'Username is required');
@@ -86,5 +93,9 @@ const validateInputs = () => {
     }else{
         setSuccess(mobile);
     }
+
+    // if((usernameValue || emailValue || passwordValue || password2Value || mobileValue) == true )
+
+
 
 };
